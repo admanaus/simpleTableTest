@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Player</th>
+    <th>Hole 1</th>
+  </tr>
+  <tr>
+    <td>
+      Player 1
+    </td>
+    <td>
+      <form >
+        <input name="hole1" type="number" [(ngModel)]="hole1Score" (change)="consoleLog()">
+        {{hole1Score}}
+      </form>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
+
